@@ -15,4 +15,6 @@ Then:
 
      $ os_reddevel
      Please enter your OpenStack Password for red:
-     $ nova show ...
+     $ echo "Do some stuff in devel"
+     $ os_redprod
+     $ echo "Do some stuff in prod"
