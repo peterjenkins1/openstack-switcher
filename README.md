@@ -7,9 +7,9 @@ Example for your .bashrc:
      
       . path/to/osswitch.bash
      
-     alias os_redprod="ose red https://red-prod:5001/v2.0 tenant tenant user red-prod"
-     alias os_reddevel="ose red https://red-devel:5001/v2.0 tenant tenant user red-devel"
-     alias os_blueprod="ose blue https://blue-prod:5001/v2.0 tenant tenant user blue-prod"
+     alias os_redprod="ose red prod https://red-prod:5001/v2.0 tenant user red-prod"
+     alias os_reddevel="ose red devel https://red-devel:5001/v2.0 tenant user red-devel"
+     alias os_blueprod="ose blue prod https://blue-prod:5001/v2.0 tenant user blue-prod"
 
 Then:
 
