@@ -15,7 +15,8 @@ ose() {
   if [ "$NEW_SERVICE" != "$OS_SERVICE" ]; then
     echo "Please enter your OpenStack Password for $NEW_SERVICE: "
     read -sr OS_PASSWORD_INPUT
-    if ! keystone --os-username $NEW_USERNAME --os-password $OS_PASSWORD_INPUT --os-auth-url $NEW_AUTH_URL token-get &> /dev/null
+    if ! keystone --os-username $NEW_USERNAME --os-password $OS_PASSWORD_INPUT \
+                  --os-auth-url $NEW_AUTH_URL token-get >/dev/null
     then
       echo "Invalid credentials"
       return 1
